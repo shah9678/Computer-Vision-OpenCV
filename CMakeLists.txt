@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
-project(vidDisplay)
+project(image-matcher)
 find_package(OpenCV REQUIRED)
-add_executable(vidDisplay vidDisplay.cpp filter.cpp)
-target_link_libraries(vidDisplay ${OpenCV_LIBS})
-
+add_executable(image-matcher image-matcher.cpp)
+target_link_libraries(image-matcher ${OpenCV_LIBS})
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
